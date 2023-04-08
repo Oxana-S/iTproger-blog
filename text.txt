@@ -1,0 +1,14 @@
+Я перешел на Linux, поэтому привожу решение для Linux KDE Neon. Эта система установленна у меня на компьютере.
+
+sudo apt install git
+git --versioni
+git config --global user.name "Sergey Yarkov"
+git config --global user.email "channel.my.honey@gmail.com"
+
+git init
+touch .gitignore
+nano .gitignore
+*.sass
+/bin
+/admin
+/config
