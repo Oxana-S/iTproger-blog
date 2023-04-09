@@ -1,11 +1,14 @@
-Я перешел на Linux, поэтому привожу решение для Linux KDE Neon. Эта система установленна у меня на компьютере.
+Я перешел на Linux, поэтому привожу решение для Linux KDE Neon. 
+Эта система установленна у меня на компьютере.
 
+// установка git и настройка конфигурации:
 sudo apt install git
-git --versioni
+git --version
 git config --global user.name "Sergey Yarkov"
 git config --global user.email "channel.my.honey@gmail.com"
 git config --list --show-origin
 
+// Добавление git в папку проекта
 git init
 touch .gitignore
 nano .gitignore
@@ -13,23 +16,28 @@ nano .gitignore
 /bin
 /admin
 /config
+touch text.txt
 
+// Добавление файлов в git
 git status
 git add .
 git status
 git commit -m "Создал первый Коммит"                
 git branch -m main
 
+// Работа с локальными ветками:
 git branch dev
 git checkout dev 
 mkdir blog 
 cd blog
 touch index.html index.js
 
+// Загрузка проекта на удаленный репозиторий на github^
 git checkout main
 git remote add origin git@github.com:Oxana-S/itproger.git
 git remote -v
 git push origin main
+
 
 Ссылка на репозиторий на Github:
 https://github.com/Oxana-S/itproger
