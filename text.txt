@@ -4,6 +4,7 @@ sudo apt install git
 git --versioni
 git config --global user.name "Sergey Yarkov"
 git config --global user.email "channel.my.honey@gmail.com"
+git config --list --show-origin
 
 git init
 touch .gitignore
@@ -12,3 +13,24 @@ nano .gitignore
 /bin
 /admin
 /config
+
+git status
+git add .
+git status
+git commit -m "Создал первый Коммит"                
+git branch -m main
+
+git branch dev
+git checkout dev 
+mkdir blog 
+cd blog
+touch index.html index.js
+
+git checkout main
+git remote add origin git@github.com:Oxana-S/itproger.git
+git remote -v
+git push origin main
+
+Ссылка на репозиторий на Github:
+https://github.com/Oxana-S/itproger
+
